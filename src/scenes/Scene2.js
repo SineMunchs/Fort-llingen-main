@@ -40,7 +40,7 @@ export default class Scene2 {
     load3DModels() {
         const loader = new GLTFLoader()
 
-        loader.load('src/3D /oneeye.glb', (gltf) => {
+        loader.load('src/3D/oneeye.glb', (gltf) => {
             this._3dmodel = gltf.scene
             this._3dmodel.scale.set(0.1, 0.1, 0.1)
             this._3dmodel.position.set(2, -2, 0)
@@ -50,7 +50,7 @@ export default class Scene2 {
             console.error('Error loading oneeye.glb:', error)
         })
 
-        loader.load('src/3D /open.glb', (gltf) => {
+        loader.load('src/3D/open.glb', (gltf) => {
             this._cherryBlossomsModel = gltf.scene
             this._cherryBlossomsModel.scale.set(1, 1, 1)
             this._cherryBlossomsModel.position.set(-5, -1, -3)

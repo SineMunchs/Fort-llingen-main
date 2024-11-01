@@ -55,7 +55,7 @@ export default class Scene4 {
     load3DModels() {
         const loader = new GLTFLoader()
 
-        loader.load('src/3D /DarumaOneEye.glb', (gltf) => {
+        loader.load('src/3D/DarumaOneEye.glb', (gltf) => {
             this._3dmodel = gltf.scene
             this._3dmodel.scale.set(0.1, 0.1, 0.1)
             this._3dmodel.position.set(-3, 1, 0)
@@ -66,7 +66,7 @@ export default class Scene4 {
             console.error('Error loading Daruma model:', error)
         })
 
-        loader.load('src/3D /open.glb', (gltf) => {
+        loader.load('src/3D/open.glb', (gltf) => {
             this._cherryBlossomsModel = gltf.scene
             this._cherryBlossomsModel.scale.set(1, 1, 1)
             this._cherryBlossomsModel.position.set(-5, -1, -3)
@@ -77,7 +77,7 @@ export default class Scene4 {
             console.error('Error loading open.glb:', error)
         })
 
-        loader.load('src/3D /drop.glb', (gltf) => {
+        loader.load('src/3D/drop.glb', (gltf) => {
             this._cherryBlossomsModel = gltf.scene
             this._cherryBlossomsModel.scale.set(1, 1, 1)
             this._cherryBlossomsModel.position.set(9, -8, 5)
@@ -88,7 +88,7 @@ export default class Scene4 {
             console.error('Error loading open.glb:', error)
         })
 
-        loader.load('src/3D /flower.glb', (gltf) => {
+        loader.load('src/3D/flower.glb', (gltf) => {
             this._flowerModel = gltf.scene
             this._flowerModel.scale.set(20, 20, 20)
             this._flowerModel.position.set(0, 0, 0)

@@ -49,7 +49,7 @@ export default class Scene3 {
         const loader = new GLTFLoader()
 
         // Load both Daruma models
-        loader.load('src/3D /DarumaNoEye.glb', (gltf) => {
+        loader.load('src/3D/DarumaNoEye.glb', (gltf) => {
             this.darumaNoEye = gltf.scene
             this.darumaNoEye.scale.set(0.1, 0.1, 0.1)
             this.darumaNoEye.position.set(0, 1, 0)
@@ -59,7 +59,7 @@ export default class Scene3 {
             console.error('Error loading DarumaNoEye model:', error)
         })
 
-        loader.load('src/3D /DarumaOneEye.glb', (gltf) => {
+        loader.load('src/3D/DarumaOneEye.glb', (gltf) => {
             this.darumaOneEye = gltf.scene
             this.darumaOneEye.scale.set(0.1, 0.1, 0.1)
             this.darumaOneEye.position.set(0, 1, 0)
@@ -70,7 +70,7 @@ export default class Scene3 {
             console.error('Error loading DarumaOneEye model:', error)
         })
 
-        loader.load('src/3D /open.glb', (gltf) => {
+        loader.load('src/3D/open.glb', (gltf) => {
             this._cherryBlossomsModel = gltf.scene
             this._cherryBlossomsModel.scale.set(1, 1, 1)
             this._cherryBlossomsModel.position.set(-5, -1, -3)
@@ -81,7 +81,7 @@ export default class Scene3 {
             console.error('Error loading open.glb:', error)
         })
 
-        loader.load('src/3D /cat.glb', (gltf) => {
+        loader.load('src/3D/cat.glb', (gltf) => {
             this.catModel = gltf.scene
             this.catModel.scale.set(3, 3, 3)
             this.catModel.position.set(15, 8, -10)

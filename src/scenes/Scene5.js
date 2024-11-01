@@ -55,7 +55,7 @@ this.rollStartTime = 0
         const loader = new GLTFLoader()
 
         // Load Daruma model
-        loader.load('src/3D /Darumasmil.glb', (gltf) => {
+        loader.load('src/3D/Darumasmil.glb', (gltf) => {
             this._3dmodel = gltf.scene
             this._3dmodel.scale.set(0.1, 0.1, 0.1)
             this._3dmodel.position.set(-4, 1, 0)
@@ -74,7 +74,7 @@ this.rollStartTime = 0
     }
 
     loadCherryBlossoms(loader, scaleX, scaleY, scaleZ, posX, posY, posZ, rotY) {
-        loader.load('src/3D /tree3.glb', (gltf) => {
+        loader.load('src/3D/tree3.glb', (gltf) => {
             const cherryBlossoms = gltf.scene
             cherryBlossoms.scale.set(scaleX, scaleY, scaleZ)
             cherryBlossoms.position.set(posX, posY, posZ)
@@ -87,7 +87,7 @@ this.rollStartTime = 0
     }
 
     loadFlower(loader) {
-        loader.load('src/3D /flower.glb', (gltf) => {
+        loader.load('src/3D/flower.glb', (gltf) => {
             const flower = gltf.scene
             flower.scale.set(26, 26, 26)
             flower.position.set(0, 1, 0)
